@@ -1,0 +1,201 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "ip",
+    "type",
+    "continent_code",
+    "continent_name",
+    "country_code",
+    "country_name",
+    "region_code",
+    "region_name",
+    "city",
+    "zip",
+    "latitude",
+    "longitude",
+    "location"
+  ],
+  "properties": {
+    "ip": {
+      "type": "string",
+      "title": "The ip schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "type": {
+      "type": "string",
+      "title": "The type schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "continent_code": {
+      "type": "string",
+      "title": "The continent_code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "continent_name": {
+      "type": "string",
+      "title": "The continent_name schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "country_code": {
+      "type": "string",
+      "title": "The country_code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "country_name": {
+      "type": "string",
+      "title": "The country_name schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "region_code": {
+      "type": "string",
+      "title": "The region_code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "region_name": {
+      "type": "string",
+      "title": "The region_name schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "city": {
+      "type": "string",
+      "title": "The city schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "zip": {
+      "type": "string",
+      "title": "The zip schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "latitude": {
+      "type": "number",
+      "title": "The latitude schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0.0
+    },
+    "longitude": {
+      "type": "number",
+      "title": "The longitude schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0.0
+    },
+    "location": {
+      "type": "object",
+      "title": "The location schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "geoname_id",
+        "capital",
+        "languages",
+        "country_flag",
+        "country_flag_emoji",
+        "country_flag_emoji_unicode",
+        "calling_code",
+        "is_eu"
+      ],
+      "properties": {
+        "geoname_id": {
+          "type": "integer",
+          "title": "The geoname_id schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0
+        },
+        "capital": {
+          "type": "string",
+          "title": "The capital schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "languages": {
+          "type": "array",
+          "title": "The languages schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true,
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "required": [
+                  "code",
+                  "name",
+                  "native"
+                ],
+                "properties": {
+                  "code": {
+                    "type": "string",
+                    "title": "The code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  },
+                  "name": {
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  },
+                  "native": {
+                    "type": "string",
+                    "title": "The native schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  }
+                },
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "country_flag": {
+          "type": "string",
+          "title": "The country_flag schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "country_flag_emoji": {
+          "type": "string",
+          "title": "The country_flag_emoji schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "country_flag_emoji_unicode": {
+          "type": "string",
+          "title": "The country_flag_emoji_unicode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "calling_code": {
+          "type": "string",
+          "title": "The calling_code schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "is_eu": {
+          "type": "boolean",
+          "title": "The is_eu schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
