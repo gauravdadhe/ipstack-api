@@ -1,5 +1,5 @@
 # ipStack-API
-ipStack API Automation project
+RestAssured + BDD Project (ipStack API Automation project)
 
 ## Technical stack used.
   1. End point documentation: https://ipstack.com/documentation
